@@ -2,14 +2,13 @@ package Bai7_WebDriver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
 
 public class DemoWebDriverBasic {
-
     public static void main(String[] args) throws InterruptedException {
+        System.setProperty("webdriver.http.factory", "jdk-http-client");
 
         WebDriver driver =new FirefoxDriver();
         driver.manage().window().maximize();
@@ -23,7 +22,7 @@ public class DemoWebDriverBasic {
         Thread.sleep(Long.parseLong("2000"));
 
         // Điều hướng lịch sử trang trước đó
-         driver.navigate().back();
+        driver.navigate().back();
         Thread.sleep(Long.parseLong("1000"));
         //Điều hướng đến trang tiếp sau
         driver.navigate().forward();
@@ -34,10 +33,10 @@ public class DemoWebDriverBasic {
         // get the title of page
         String title=driver.getTitle();
 
-       // get the current URL
-         String url=driver.getCurrentUrl();
+        // get the current URL
+        String url=driver.getCurrentUrl();
 
-         //Get the current page HTML source
+        //Get the current page HTML source
         String html=driver.getPageSource();
 
         System.out.println("Title "+title);

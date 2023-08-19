@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite Login CRM2" verbose="1">
+    <test name="Login Test CRM">
+        <packages>
+            <package name="Bai9_TestNGFramework" />
+        </packages>
+    </test>
+</suite>
