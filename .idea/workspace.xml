@@ -22,6 +22,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/KH_SeleniumMaven04-2023" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/SuiteLogin_Class.xml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/Bai8_Checkbox_Radio_Dropdown/HanldeCheckbox.java" root0="SKIP_INSPECTION" />
